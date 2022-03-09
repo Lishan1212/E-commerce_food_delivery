@@ -1,10 +1,11 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, avoid_web_libraries_in_flutter, unused_import
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, avoid_web_libraries_in_flutter, unused_import, avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:foody/colors/colors.dart';
 import 'package:foody/home/food_page_scroll.dart';
 import 'package:foody/widgets/big_text.dart';
 import 'package:foody/widgets/small_text.dart';
+
+import '../utills/colors/colors.dart';
 
 class HomePage extends StatefulWidget {
   
@@ -15,6 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    print("curent height is:"+MediaQuery.of(context).size.height.toString());
     return Scaffold(
       body: Column(
         children: [
