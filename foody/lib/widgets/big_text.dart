@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:foody/utills/dimentions.dart';
 
 class BigText extends StatelessWidget {
  Color? color;
@@ -8,7 +9,7 @@ class BigText extends StatelessWidget {
   double size;
   TextOverflow overflow;
   BigText({Key? key, this.color=const Color(0xFF332d2b) ,
-  this.size=30.0,
+  this.size=20.0,
   required this.text,
   this. overflow=TextOverflow.ellipsis
   }) : super(key: key);
@@ -21,7 +22,8 @@ class BigText extends StatelessWidget {
       overflow: overflow ,
      style: TextStyle(color: color,
      fontFamily: 'Roboto',
-     fontWeight: FontWeight.w600
+     fontWeight: FontWeight.w600,
+     fontSize: Dimentions.font20
      ),
     );
   }
